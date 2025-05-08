@@ -46,10 +46,10 @@ fun ValidatingTextField() {
             onValueChange = {
                 text = it
                 isError = !isValidEmail(it.text)
-                if (isError) {
-                    errorMessage = "Invalid input"
+                errorMessage = if (isError) {
+                    "Invalid input"
                 } else {
-                    errorMessage = null
+                    null
                 }
             },
             label = { Text("Enter email") },
@@ -65,7 +65,7 @@ fun ValidatingTextField() {
     }
 }
 
-fun isValidEmail(email: String): Boolean {
+private fun isValidEmail(email: String): Boolean {
     val emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$".toRegex()
     return email.matches(emailRegex)
 }
