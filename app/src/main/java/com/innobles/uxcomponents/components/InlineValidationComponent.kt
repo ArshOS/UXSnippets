@@ -53,7 +53,8 @@ fun ValidatingTextField() {
                 }
             },
             label = { Text("Enter email") },
-            isError = isError
+            isError = isError,
+            singleLine = true,
         )
         if (isError) {
             Text(

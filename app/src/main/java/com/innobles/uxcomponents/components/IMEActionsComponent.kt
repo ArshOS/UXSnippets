@@ -17,6 +17,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -98,6 +99,14 @@ fun FormComposable() {
             ),
             keyboardActions = KeyboardActions(
                 onNext = { focusManager.moveFocus(FocusDirection.Down) }
+            ),
+            colors = OutlinedTextFieldDefaults.colors(
+                unfocusedBorderColor = Color.Transparent,
+                focusedBorderColor = WhiteGreekVillaBar,
+                unfocusedLabelColor = WhiteGreekVillaItem.copy(alpha = 0.6f),
+                focusedLabelColor = WhiteGreekVillaItem,
+                unfocusedContainerColor = WhiteGreekVillaBar.copy(alpha = 0.3f),
+                focusedContainerColor = Color.Transparent
             )
         )
 
@@ -141,6 +150,14 @@ fun FormComposable() {
                     focusManager.clearFocus()
                     // Optional: Trigger submit here if desired
                 }
+            ),
+            colors = OutlinedTextFieldDefaults.colors(
+                unfocusedBorderColor = Color.Transparent,
+                focusedBorderColor = WhiteGreekVillaBar,
+                unfocusedLabelColor = WhiteGreekVillaItem.copy(alpha = 0.6f),
+                focusedLabelColor = WhiteGreekVillaItem,
+                unfocusedContainerColor = WhiteGreekVillaBar.copy(alpha = 0.3f),
+                focusedContainerColor = Color.Transparent
             )
         )
 
@@ -163,8 +180,8 @@ fun FormComposable() {
             colors = ButtonColors(
                 containerColor = WhiteGreekVillaBar,
                 contentColor = WhiteGreekVillaItem,
-                disabledContainerColor = Color.LightGray,
-                disabledContentColor = Color.Gray
+                disabledContainerColor = WhiteGreekVillaBar.copy(alpha = 0.3f),
+                disabledContentColor = WhiteGreekVillaItem.copy(alpha = 0.6f)
             )
         ) {
             Text("Submit")
