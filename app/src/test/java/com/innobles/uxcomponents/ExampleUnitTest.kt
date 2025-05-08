@@ -1,4 +1,4 @@
-package com.innobles.uxtips
+package com.innobles.uxcomponents
 
 import org.junit.Test
 

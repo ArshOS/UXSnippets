@@ -1,4 +1,4 @@
-package com.innobles.uxtips
+package com.innobles.uxcomponents
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.innobles.uxtips.ui.theme.UXTipsTheme
+import com.innobles.uxcomponents.ui.theme.UXTipsTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

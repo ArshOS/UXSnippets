@@ -1,4 +1,4 @@
-package com.innobles.uxtips.tipComponents
+package com.innobles.uxcomponents.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -22,9 +22,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.innobles.uxtips.ui.theme.WhiteGreekVilla
-import com.innobles.uxtips.ui.theme.WhiteGreekVillaBar
-import com.innobles.uxtips.ui.theme.WhiteGreekVillaItem
+import com.innobles.uxcomponents.ui.theme.WhiteGreekVilla
+import com.innobles.uxcomponents.ui.theme.WhiteGreekVillaBar
+import com.innobles.uxcomponents.ui.theme.WhiteGreekVillaItem
 
 
 @Composable

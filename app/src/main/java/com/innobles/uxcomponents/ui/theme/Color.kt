@@ -1,4 +1,4 @@
-package com.innobles.uxtips.ui.theme
+package com.innobles.uxcomponents.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
